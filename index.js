@@ -9,8 +9,8 @@ if(isNaN(user_input)) {
     process.exit(0)
 }
 
-for(start =0;start<user_input.length;start++){
-    for(end= start+1; end<=user_input.length; end++ ){
+for(let start =0;start<user_input.length;start++){
+    for(let end= start+1; end<=user_input.length; end++ ){
         console.log(user_input.substring(start,end ))
         let possiblility = user_input.substring(start,end )
         if(number_theory.is_prime(Number(possiblility))){
